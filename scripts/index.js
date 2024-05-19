@@ -15,6 +15,12 @@ window.onload = function () {
            cell2.innerHTML = data[i].courseNum;
            cell3.innerHTML = data[i].courseName;
            
+           const detailsCell = row.insertCell(3);
+           let anchor = document.createElement("a");
+           anchor.href = `details.html?cid=${data[i].id}`;
+           anchor.text = "See details";  
+           detailsCell.appendChild(anchor);
+
 
         }
      });
