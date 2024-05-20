@@ -23,7 +23,15 @@ window.onload = function () {
 
 
         }
+
+        let newCourseBtn = document.getElementById("newCourse");
+        newCourseBtn.onclick = addNewCourse;
      });
+
+     function addNewCourse() {
+      window.location.href="./newcourse.html"; 
+     }
+
 
 
 }
